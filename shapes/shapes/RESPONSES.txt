@@ -1,1 +1,19 @@
 Boris Martin
+Exercice 1
+1) Cela construit un point avec les valeurs par default de x et y c'est à dire 0
+2) Cette classe accède aux attributs de la classe point il faut donc les mettre en privé
+3) Par sécurité afin d'éviter de pouvoir modifier les données d'une classe n'importe comment
+4) Un accesseur permet d'obtenir la valeur des attributs de l'instance d'une classe, oui afin de pouvoir afficher les valeurs de l'instance de point.
+5) On ne peut plus appeler le constructeur sans arguments
+7) On ajoute l'attribut static qui s'incrementera a chaque création d'instance de Point.
+Exercice 2
+1) L'égalité s'effectue ici au niveau du hashcode des instances de Point d'où le fait que p2 a le même hashcode que p1 contrairement à p3 car une nouvelle instance est créée
+3) indexOf retrouve un objet dans la liste en fonction de son hashcode d'où le fait qu'il ne retrouve pas p3 dans sa liste
+
+Exercice 3
+
+5) Cela nous retourne false. Cela fonctionne.
+6) Il n'y a donc plus de capacité dans la liste et des méthodes size() et contains() sont déja prédéfinies pour les linkedlist.
+
+Exercice 4
+1) Soit non mutable c'est à dire que l'on crée un nouveau point, soit mutable et l'on modifie directe les attributs du point

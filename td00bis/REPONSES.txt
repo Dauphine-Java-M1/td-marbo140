@@ -1,0 +1,6 @@
+TD0BIS
+8)b2859b04706953eab27f46faf9807c357444253d
+Exercice 2
+5) L'envoi des modifications est refusée car la version locale du fichier n'est pas à jour avec la version distante du fichier
+6) Les deux fichiers ont été fusionné avec les deux modifications
+7) Il aurait fallu manuellement sélectionné la modification a effectué

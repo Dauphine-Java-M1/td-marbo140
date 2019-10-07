@@ -1,0 +1,40 @@
+Boris Martin
+
+Exercice 1
+Q4: 
+Maven version 3.6.0
+Q5:
+GroupID : definit le nom de domaine dans lequel se situe notre projet
+ArtifactID : definit le nom du projet
+Q6:
+Le repertoire target va contenir l'ensemble des fichiers .class à executer
+Q8:
+Le class path permet de definir le chemin pour accéder au répertoire contenant le fichier voulu
+Q13:
+Cette propriété définit sous quelle version
+La propriété maven.compiler.source indique sous quelle version vont être compilés les fichiers .class
+La propriété maven.compiler.target fait référence au byte code et sous quelle version au minimum il va être généré
+
+
+Exercice 2
+Q1:
+Le jar ne peut pas etre exécuté.
+
+Exercice 3
+Q3: 
+Cela permet de nous proposer la méthode System.out.println grâce au raccoruci sysout tapé.
+Q4:
+De même cela devrait me proposer la méthode toString mais cela ne m'a rien proposé sur mon IDE
+Q5: 
+Permet d'obtenir le raccourci pour créer une méthode main
+Q6:
+Cela va nous permettre d'obtenir les getter et setter de la classe, permettant ici d'obtenir et de definir la valeur de la variable toto
+Q7:
+Cela va nous permettre d'accèder au refractor c'est à dire nous permettre de modifier le nom de la classe ou de la variable et que cette modification soit ensuite appliquée dans l'ensemble du code
+
+Exercice 4
+
+
+
+
+

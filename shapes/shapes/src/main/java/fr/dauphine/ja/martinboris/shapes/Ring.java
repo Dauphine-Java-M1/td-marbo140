@@ -2,30 +2,34 @@ package fr.dauphine.ja.martinboris.shapes;
 
 import java.util.ArrayList;
 
-public class Ring extends Circle{
-	Point centre;
-	int rayon;
+public class Ring {
+	Circle cercle;
 	int rayonint;
 	
 	
 	public Ring(Point centre, int rayon, int rayonint) {
-		super(centre, rayon);
+		this.cercle = new Circle(centre, rayon);
 		this.rayonint = rayonint;
 	}
 
 	public boolean equals (Ring r) {
-		return ((centre.equals(r.centre))&&(rayon == r.rayon)&&(rayonint == r.rayonint));
+		return (this.cercle.equals(r.cercle))&&(rayonint == r.rayonint);
 	}
 	
 	
 	public String toString () {
-		return this.centre.toString() + "rayon " + this.rayon + "rayon intérieur" + this.rayonint;
+		return this.cercle.toString() + "rayon intérieur" + this.rayonint;
 	}
 	
-	public boolean contains(Point p) {
-		Circle first = new Circle (this.centre, this.rayonint);
-		Circle last = new Circle (this.centre, this.rayon);
-		return !(first.contains(p))&&(last.contains(p));	
+	public boolean contains(Point p) {	
+		if (this.cercle.contains(p)) {
+			int tmp = this.cercle.rayon;
+			this.cercle.rayon = rayonint;
+			boolean bool =  !(this.cercle.contains(p));
+			this.cercle.rayon = tmp;
+			return bool;
+		}
+		return false;
 	}
 	
 	public boolean contains(Point p, ArrayList<Ring> rings) {

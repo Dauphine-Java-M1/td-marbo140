@@ -3,7 +3,7 @@ package fr.dauphine.ja.martinboris.shapes;
 import java.util.ArrayList;
 
 public class Circle {
-	private Point centre;
+	protected Point centre;
 	int rayon;
 	
 
@@ -13,11 +13,10 @@ public class Circle {
 	}
 	
 	
-	public void translate (int dx, int dy) {
-		Point p = new Point (dx, dy);
+	/*public void translate (int dx, int dy) {
 		this.centre.setX(dx);
 		this.centre.setY(dy);
-	}
+	}*/
 	
 	public Point getCenter() {
 		return this.centre;

@@ -10,17 +10,16 @@ public class Point
 {
 	private int x;
 	private int y;
-	private static int cpt = 0;
+	static int cpt = 0;
 	
 	public Point() {
 		
 	}
 
 	public Point(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
-		this.cpt++;
+		cpt++;
 	}
 	
     public int getX() {
@@ -39,10 +38,9 @@ public class Point
 		this.y = y;
 	}
 	
-	public void translate (int dx, int dy) {
-		Point p = new Point (dx, dy);
-		this.x = dx;
-		this.y = dy;
+	public Point translate (int dx, int dy) {
+		Point p = new Point(this.x+dx, this.y+dy);
+		return p;
 	}
 	
 

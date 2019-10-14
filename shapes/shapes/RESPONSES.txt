@@ -21,3 +21,18 @@ Exercice 4
 Exercice 5 
 1) Pas forcément car il faudra réimplémenter de nombreuses méthodes définies dans Circle pour ne pas générer de problèmes.
 
+TD2
+Exercice 1
+1)
+Graphics : Permet de dessiner des formes
+Graphics2D : Propose plus de fonctionnalités que Graphics
+JFrame : permet d'afficher une fenetre
+JPanel : Va permettre de definir un conteneur afin d'y placer des objet de meme type ou des composants (boutons, cases à cocher...)
+
+5) Lorque l'on redimensionne la fenetre.
+
+6)AWT est une extension de swing
+
+
+
+

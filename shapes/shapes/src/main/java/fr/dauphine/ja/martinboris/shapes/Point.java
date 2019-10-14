@@ -30,6 +30,21 @@ public class Point
 	public int getY() {
 		return y;
 	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+	
+	public void translate (int dx, int dy) {
+		Point p = new Point (dx, dy);
+		this.x = dx;
+		this.y = dy;
+	}
+	
 
 	@Override
 	public boolean equals(Object obj) {

@@ -16,4 +16,8 @@ Exercice 3
 6) Il n'y a donc plus de capacité dans la liste et des méthodes size() et contains() sont déja prédéfinies pour les linkedlist.
 
 Exercice 4
-1) Soit non mutable c'est à dire que l'on crée un nouveau point, soit mutable et l'on modifie directe les attributs du point
+1) Soit non mutable c'est à dire que l'on crée un nouveau point, soit mutable et l'on modifie directement les coordonnées du point
+
+Exercice 5 
+1) Pas forcément car il faudra réimplémenter de nombreuses méthodes définies dans Circle pour ne pas générer de problèmes.
+

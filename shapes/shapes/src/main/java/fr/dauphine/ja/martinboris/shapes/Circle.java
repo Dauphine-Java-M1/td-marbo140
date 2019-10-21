@@ -2,7 +2,9 @@ package fr.dauphine.ja.martinboris.shapes;
 
 import java.util.ArrayList;
 
-public class Circle {
+import fr.dauphine.ja.martinboris.view.CircleDrawer;
+
+public class Circle extends Shape{
 	protected Point centre;
 	int rayon;
 	
@@ -10,6 +12,7 @@ public class Circle {
 	public Circle(Point p, int r) {
 		centre = p;
 		rayon = r;
+		d = new CircleDrawer(this);
 	}
 	
 	
@@ -20,6 +23,10 @@ public class Circle {
 	
 	public Point getCenter() {
 		return this.centre;
+	}
+	
+	public int getRayon() {
+		return this.rayon;
 	}
 	
 	public double surface() {

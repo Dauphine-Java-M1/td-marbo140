@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import fr.dauphine.ja.martinboris.controller.MouseController;
 import fr.dauphine.ja.martinboris.shapes.Circle;
 import fr.dauphine.ja.martinboris.shapes.Point;
 import fr.dauphine.ja.martinboris.shapes.Shape;
@@ -36,7 +37,10 @@ public class MyDisplay extends JPanel{
 		Circle c = new Circle (p, 300);
 		w.addshape(c);
 		MyDisplay d = new MyDisplay(w);
+		MouseController e = new MouseController(d);
+		
 		frame.add(d);
+		frame.add(e);
 		}
 
 }

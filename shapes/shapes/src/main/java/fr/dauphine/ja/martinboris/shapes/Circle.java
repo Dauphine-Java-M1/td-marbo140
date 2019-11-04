@@ -10,9 +10,10 @@ public class Circle extends Shape{
 	
 
 	public Circle(Point p, int r) {
+		//super(new CircleDrawer(this));
 		centre = p;
 		rayon = r;
-		d = new CircleDrawer(this);
+		this.d = new CircleDrawer(this);
 	}
 	
 	
